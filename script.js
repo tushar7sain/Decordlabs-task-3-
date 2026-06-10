@@ -18,3 +18,18 @@ changebtn.addEventListener("click", () => {
 
 //project count
 
+let count = 0;
+
+const counttext = document.getElementById("count");
+
+document.getElementById("increase-btn")
+.addEventListener("click", () => {
+    count++;
+    counttext.textContent = count;
+});
+
+document.getElementById("decrease-btn")
+.addEventListener("click", () => {
+    count--;
+    counttext.textContent = count;
+});
