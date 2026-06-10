@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!-- header-section -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">Tushar.</h2>
+
+            <ul class="navlinks">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <button id="dark-btn">🌙</button>
+        </nav>
+    </header>
+    <!-- main-section -->
+    <main>
+        <!-- Hero-section -->
+        <section class="hero" id="Home">
+            <h1 id="changing-text">
+                Frontend Developer
+            </h1>
+
+            <p>Building interactive and modern websites.</p>
+
+            <button id="Change-btn">
+                Change Text
+            </button>
+        </section>
+
+        <!-- Counter-section -->
+        <section class="Counter-section">
+            <h2>Project Counter</h2>
+            <div class="counter-box">
+                <button id="decrease-btn">-</button>
+
+                <span id="count">0</span>
+
+                <button id="increase-btn">+</button>
+            </div>
+        </section>
+
+        <!-- About-section -->
+        <section class="about-section" id="about">
+            <h2>
+                About Me
+            </h2>
+
+            <p>
+                I create responsive and interactive websites using HTML, CSS and JavaScript.
+            </p>
+        </section>
+
+        <!-- Service-section -->
+        <section class="Service-section" id="services">
+            <h2>Services</h2>
+
+            <div class="service-box">
+                <div class="cards">
+                    <i class="fa-solid fa-palette"></i>
+                    <div class="info">
+                        <h3>Web Desgin</h3>
+                        <p>Modern Ul Design</p>
+                    </div>
+                </div>
+                <div class="cards">
+                    <i class="fa-solid fa-code"></i>
+                    <div class="info">
+                        <h3>Frontend</h3>
+                        <p>Interactive Website</p>
+                    </div>
+                </div>
+                <div class="cards">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <div class="info">
+                        <h3>Responsive</h3>
+                        <p>Mobile Friendly Design</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Contact-section -->
+        <section class="contact-section" id="contact">
+            <h2>Contact Me</h2>
+
+            <form action="server/">
+                <input type="text" placeholder="Your Name" name="Name">
+                <input type="text" placeholder="Your Email" name="Email">
+                <textarea name="Message" id="" placeholder="Your Message"></textarea>
+
+                <button class="contact-btn" id="Send-btn">
+                    Send Message
+                </button>
+            </form>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <span> &copy; 2026 Tushar. All Rights Reserved.</span>
+    </footer>
+</body>
+
+</html>

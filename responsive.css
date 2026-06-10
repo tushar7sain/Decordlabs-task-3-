@@ -1,0 +1,42 @@
+@media(max-width : 765px) {
+    .navlinks{
+        display: none;
+    }
+    .hero h1{
+        font-size: 35px;
+    }
+    .Counter-section h2{
+        font-size: 26px;
+    }
+    .counter-box button{
+        font-size: 18px;
+        padding: 8px 18px;
+    }
+    #count{
+        font-size: 33px;
+    }
+    .about-section h2{
+        font-size: 26px;
+    }
+    .about-section p{
+        font-size: 14px;
+    }
+    .Service-section h2{
+        font-size: 26px;
+    }
+    .service-box {
+        flex-direction: column;
+    }
+    .cards{
+        width: 275px;
+    }
+    .info h3{
+        font-size: 20px;
+    }
+    .info p{
+        font-size: 14px;
+    }
+    form{
+        width: 100%;
+    }
+}
