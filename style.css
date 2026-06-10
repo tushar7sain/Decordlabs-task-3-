@@ -19,8 +19,22 @@ body {
 /* Dark Mode */
 
 .dark-mode {
-    background: #111;
+    background: #0B1120;
+    color: #F8FAFC;
+}
+
+.dark-mode button {
+    background: linear-gradient(135deg #7C5CFF, #8B5CF6);
     color: white;
+}
+
+body,
+.navbar,
+.card,
+button,
+input,
+textarea {
+    transition: 0.4s ease;
 }
 
 /* Nav-bar */
@@ -38,32 +52,42 @@ body {
 }
 
 .dark-mode .navbar {
-    background: #222;
+    background: #111827;
+    border-bottom: 1px solid #334155;
 }
 
 .logo {
     color: #5B3DF5;
 }
 
-.navlinks{
+.navlinks {
     display: flex;
     list-style: none;
-    gap: 60px; 
+    gap: 60px;
 }
 
-.navlinks a{
+.navlinks a {
     text-decoration: none;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     cursor: pointer;
     color: black;
+    transition: 0.4s;
 }
 
 .dark-mode .navlinks a {
-    color: white;
+    color: #F8FAFC;
 }
 
-#dark-btn{
+.navlinks a:hover {
+    color: #5B3DF5;
+}
+
+.dark-mode .navlinks a:hover {
+    color: #7C5CFF;
+}
+
+#dark-btn {
     padding: 10px 15px;
     background-color: black;
     cursor: pointer;
@@ -71,18 +95,18 @@ body {
     border-radius: 50%;
 }
 
-.dark-mode #dark-btn{
+.dark-mode #dark-btn {
     background-color: white;
 }
 
-    /* Hero-section */
+/* Hero-section */
 
-.hero{
+.hero {
     display: flex;
     width: 100%;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient( 135deg, #F5F0FF,#ECE4FF);
+    background: linear-gradient(135deg, #c3a5ff, #976bff);
     position: relative;
     overflow: hidden;
     gap: 20px;
@@ -90,16 +114,20 @@ body {
     padding: 60px 8% 40px 8%;
 }
 
-.hero h1{
+.dark-mode .hero {
+    background: linear-gradient(135deg #0B1120, #111827);
+}
+
+.hero h1 {
     font-size: clamp(5px, 5vw, 60px);
     text-align: center;
 }
 
-.hero p{
+.hero p {
     color: #6B7280;
 }
 
-.hero button{
+.hero button {
     padding: 12px 25px;
     border: none;
     color: white;
@@ -109,30 +137,31 @@ body {
     cursor: pointer;
 }
 
-.hero button:active{
-    background:#7C5CFF;
+.hero button:active {
+    background: #7C5CFF;
 }
-    /* Counter-section */
 
-.Counter-section{
+/* Counter-section */
+
+.Counter-section {
     text-align: center;
     padding: 30px 8%;
 }
 
-.Counter-section h2{
+.Counter-section h2 {
     font-size: 28px;
     font-weight: 900;
     margin-bottom: 20px;
 }
 
-.counter-box{
+.counter-box {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;  
+    gap: 20px;
 }
 
-.counter-box button{
+.counter-box button {
     border: none;
     border-radius: 10px;
     color: white;
@@ -142,32 +171,32 @@ body {
     font-size: 20px;
 }
 
-#count{
+#count {
     font-size: 35px;
 }
 
-    /* About-section */
+/* About-section */
 
-.about-section{
-    text-align:center;
+.about-section {
+    text-align: center;
     background-color: #edeeef;
     flex-direction: column;
     padding: 30px 8%;
 }
 
-.about-section h2{
+.about-section h2 {
     font-size: 28px;
     font-weight: 900;
     margin-bottom: 10px;
 }
 
-.about-section p{
+.about-section p {
     font-size: 16px;
     color: #6B7280;
 }
 
-    /* Sevice-section */
-    
+/* Sevice-section */
+
 .Service-section {
     padding: 30px 8%;
     display: flex;
@@ -175,7 +204,7 @@ body {
     justify-content: center;
 }
 
-.Service-section h2{
+.Service-section h2 {
     font-size: 28px;
     text-align: center;
     font-weight: 900;
@@ -189,22 +218,26 @@ body {
     gap: 30px;
 }
 
-.cards{
+.cards {
     border: 2px solid #E5E7EB;
     border-radius: 10px;
     padding: 18px 25px;
     gap: 10px;
     display: flex;
     transition: 0.4s;
-    box-shadow: 0px 6px 6px  rgba(0, 0, 0, 0.258);
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.258);
 }
-.cards:hover{
+
+.cards:hover {
     transform: translateY(-10px);
 }
-.dark-mode .cards{
-    background: #222;
+
+.dark-mode .cards {
+    background: #1E293B;
+    border: 2px solid #334155;
 }
-.cards i{
+
+.cards i {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -217,14 +250,18 @@ body {
     height: 50px;
 }
 
-.info p{
+.dark-mode .cards i {
+    background: linear-gradient(135deg #7C5CFF, #8B5CF6);
+}
+
+.info p {
     font-size: 16px;
     color: #6B7280;
 }
 
-    /* contact-section */
+/* contact-section */
 
-.contact-section{
+.contact-section {
     padding: 30px 8%;
     background-color: #e8ecf7;
     display: flex;
@@ -233,11 +270,12 @@ body {
     align-items: center;
 }
 
-.contact-section h2{
+.contact-section h2 {
     font-size: 28px;
     font-weight: 900;
     margin-bottom: 10px;
 }
+
 form {
     display: flex;
     width: 30%;
@@ -245,20 +283,28 @@ form {
     gap: 20px;
 }
 
-input{
+input {
     padding: 10px 50px 10px 15px;
     color: #6B7280;
     border-radius: 5px;
     border: 2px solid #cccdd0;
 }
 
-textarea{
+textarea {
     color: #6B7280;
     padding: 15px;
     border-radius: 5px;
     border: 2px solid #cccdd0;
 }
-.contact-btn{
+
+.dark-mode input,
+.dark-mode textarea {
+    background: #1E293B;
+    border: 2px solid #334155;
+    color: white;
+}
+
+.contact-btn {
     padding: 15px;
     background-color: #7C5CFF;
     cursor: pointer;
@@ -268,7 +314,8 @@ textarea{
     border-radius: 10px;
     font-weight: 600;
 }
-.footer{
+
+.footer {
     text-align: center;
     background-color: #030326;
     padding: 20px;
