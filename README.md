@@ -29,12 +29,12 @@ This project showcases a clean UI with interactive features like dark mode, dyna
 ## Screenshots
 
 ### Light Mode
-![Light Mode](assets/Light-mode.png)
-![Light Mode Footer](assets/FooterLight-mode.png)
+![Light Mode](Screenshots/Light-mode.png)
+![Light Mode Footer](Screenshots/Footer-ligth-mode.png)
 
 ### Dark Mode
-![Dark Mode](assets/Dark-mode.png)
-![Dark Mode Footer](assets/Footer-Dark-mode.png)
+![Dark Mode](Screenshots/Dark-mode.png)
+![Dark Mode Footer](Screenshots/Footer-dark-mode.png)
 
 ---
 
