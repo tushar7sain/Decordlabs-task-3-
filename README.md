@@ -22,7 +22,7 @@ This project showcases a clean UI with interactive features like dark mode, dyna
 
 - HTML5
 - CSS3
-- JavaScript (Vanilla JS)
+- JavaScript
 - Font Awesome Icons
 
 ---
